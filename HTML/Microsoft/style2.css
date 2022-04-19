@@ -1,0 +1,458 @@
+*{
+    font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif ;
+}
+
+a:link, a:visited {text-decoration: none; color:black;}
+
+nav.barraPrincipal {
+    display:flex;
+    flex-wrap: wrap;
+    
+
+}
+nav > img{
+    width: 110px;
+    height:23px;
+    margin-left: 69px;
+    margin-right: -25px;
+    margin-top: 9px;
+    cursor: pointer;
+}
+
+.menuPrincipal li{
+    display: inline;
+    color: black;
+    margin-left: 15px;
+    font-size: 13px;
+    position: relative;
+    top: -5px;
+
+}
+.menuPrincipal li:hover{
+    text-decoration: underline;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-thickness: 2px;
+}
+.menuPrincipal li:active {
+    outline: 1.5px dashed black;
+    padding: 15px 0px;
+    
+}
+
+.menuDireito {
+    float: right;
+    overflow: hidden;
+    margin-left: 470px;
+}
+
+.menuDireito .drop {
+    font-size: 12px;
+    border:none;
+    outline:none;
+    color:black;
+    padding: 14px 16px;
+    font: inherit;
+    margin: 0;
+    font-size: 13px;
+}
+.drop:hover {
+    cursor:pointer;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-thickness: 2px;
+
+}
+.dropdown-content {
+    display:none;
+    position: absolute;
+    width: 92.5%;
+    margin-left: 50px;
+    height:350px;
+    left: 0;
+    z-index: 1;
+    background-color: #f2f2f2;
+    border: 1px solid rgb(0,0,0,0.05);
+    font-size: 13px;;
+}
+.menuDireito:hover .dropdown-content {
+    display:block;
+    text-decoration: underline;
+}
+.dropdown-content li:hover{
+    cursor: pointer;
+    text-decoration-color: black;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-thickness: 1px;
+}
+.menuDireito:active {
+    outline: 1.5px dashed black;
+    background-color:#f2f2f2
+
+}
+.dropdown-content li:active{
+    outline: 1.5px dashed black;
+
+}
+
+.column {
+    float: left;
+    width:19.998%;
+    padding: 10px;
+    height:250px;
+}
+.column p {
+    font-weight: bold;
+    margin-left: 15px;
+}
+.column li {
+    float:none;
+    color:black;
+    padding: 16px;
+    display: block;
+    text-align:left;
+}
+.magnifying {
+    display: inline;
+}
+.menu-icons {
+    position:relative;
+    display:inline-block;
+}
+#input{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    margin-left: -500px;
+}
+input {
+    outline: 3px solid black;
+    padding: 12px 16px;
+    width: 100%;
+}
+
+.menu-icons:hover #input {
+    display: inline-block;
+
+}
+.magnifying, .kart, .profile {
+    float: right;
+    overflow: hidden;
+    margin-left: 15px;
+    margin-right: 15px;
+    position: relative;
+    top: -5px;
+    cursor: pointer;
+}
+.magnifying:active, .kart:active, .profile:active {
+    outline: 1.5px dashed black;
+}
+.main {
+    display: block;
+    justify-content: center;
+}
+.prop img {
+    width: 91%;
+    margin-left: 60px;
+    cursor: pointer;
+}
+.title-prop-1{
+    color:white;
+    position: absolute;
+    top: 130px;
+    left: 75px;
+    width: 450px;
+    margin: 50px;
+    padding: 15px;
+    font-size: 24px;
+    font-weight:normal;
+}
+.txt-prop-1 {
+    color:white;
+    position: absolute;
+    top: 175px;
+    left: 75px;
+    width: 450px;
+    margin: 50px;
+    padding: 15px;
+    font-size: 15px;;
+}
+.prop-button {
+    background-color: white;
+    width:250px;
+    height: 40px; 
+    font-weight: bold;
+    border:none;
+    margin: 50px;
+    padding: 5px;
+    position: absolute;
+    top: 275px;
+    left: 90px;
+    text-align: center;
+    font-size: 15px;
+    line-height: 0.0em;
+    font-weight:500;
+    cursor: pointer;
+}
+.prop-button:hover{
+    text-decoration-color: black;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-thickness: 2px;
+    
+}
+.prop-button:active {
+    outline-style: inset;
+    outline-color: #f2f2f2;
+    outline-width: 1px;
+}
+.icons {
+    display:flex;
+    position: relative;
+    justify-content: center;
+    margin-top: 65px;
+    margin-bottom: 65px;
+    margin-left:50px;
+}
+
+.icon-1, .icon-2, .icon3 {
+    float:right;
+    width: 15%;
+    
+}
+.icon-1:active, .icon-2:active, .icon-3:active {
+    outline: 2px solid black;
+}
+
+.icons span {
+    display:flex;
+    flex-wrap: wrap;
+    width: 110px;
+    font-weight: 500;
+    text-align: center;
+    font-size: 15px;
+    margin-left: -30px;
+ 
+    
+}
+.icons span:hover {
+    text-decoration-color: black;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-thickness: 1px;
+ 
+}
+.icons a:hover > span{
+    text-decoration-color: black;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-thickness: 1px;
+ 
+}
+.icons:after {
+    display:block;
+    content:"";
+    clear:both;
+}
+
+.articles {
+    display:grid;
+    grid-template-columns: repeat(4, 307px);
+    grid-gap: 2px;
+    justify-content: center;
+    margin-left: 35px;;
+}
+.articles p {
+    font-size: 15px;
+    width: 270px;
+    text-align: left;
+}
+.articles h3 {
+    font-weight: 500;
+    cursor: pointer;
+}
+.more {
+    color:#0067b8;
+    font-weight: 500;
+    padding: 10px 3px 7px 0;
+    cursor: pointer;
+}
+.more:hover {
+    text-decoration-color: #0067b8;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-thickness: 2px;
+}
+.more:active{
+    outline: 2px solid black; 
+
+}
+.articles img:hover {
+    filter:opacity(85%);
+}
+
+.prop-2-2 img {
+    width: 91%;
+    margin-left: 60px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    cursor: pointer;
+}
+.title-prop-2{
+    color:black;
+    position: absolute;
+    top: 1268px;
+    left: 75px;
+    width: 450px;
+    margin: 50px;
+    padding: 15px;
+    font-size: 24px;
+    font-weight:500;
+}
+.txt-prop-2 {
+    color:black;
+    position: absolute;
+    top: 1315px;
+    left: 75px;
+    width: 450px;
+    margin: 50px;
+    padding: 15px;
+    font-size: 15px;
+}
+.prop-button-2 {
+    color:white;
+    background-color: black;
+    width:140px;
+    height: 40px; 
+    font-weight: bold;
+    border:none;
+    margin: 50px;
+    padding: 5px;
+    position: absolute;
+    top: 1365px;
+    left: 90px;
+    text-align: center;
+    font-size: 15px;
+    line-height: 0.0em;
+    font-weight:500;
+    cursor: pointer;
+    
+}
+.prop-button-2:hover{
+    text-decoration-color: white;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-thickness: 2px;
+    
+}
+.prop-button-2:active {
+    outline-style: inset;
+    outline-color: #f2f2f2;
+    outline-width: 1px;
+}
+.title-3 {
+    font-weight: 500;
+    font-size: 25px;;
+    margin: 10px;
+    padding-bottom: 10px;;
+    margin-left: 70px;;
+}
+.follow {
+    display: flex;
+    width: 45px;
+    margin: 10px;
+    margin-left: 70px;
+    
+}
+.follow > p {
+    white-space: nowrap;
+    color: rgb(0,0,0,.6)
+}
+    
+.follow > img {
+    padding: 10px;
+    cursor: pointer;
+}
+.follow > img:hover{
+    filter: brightness(90%)
+}
+.follow > img:active {
+    outline: 2px solid black;
+}
+.lists {
+    background-color:#f2f2f2;
+    font-size: 11px;
+    height:350px;
+    color: #616161;
+}
+.lists p {
+    font-weight: 500;
+    font-size: 15px;
+    margin-top:50px;
+    margin-bottom: 5px;
+}
+.lists li {
+    padding: 8px 0px;
+    text-align: left;
+    cursor: pointer;
+}
+.lists li:hover{
+    color:#262626;
+    text-decoration-color: #262626;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-thickness: 1px;
+}  
+.lists li:active {
+    outline: 1.5px dashed black;
+
+}
+.column-1,.column-2,.column-3,.column-4,.column-5, .column-6 {
+    float: left;
+    width:160px;
+    list-style-type: none;
+    margin: 0px;
+    word-break: break-word;
+    margin-left:10px;
+}
+footer {
+    background-color: #f2f2f2;
+    color:#616161;
+    display: flex;
+    
+}
+footer p {
+    font-size: 12px;
+    margin-left: 70px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+footer p:hover {
+    text-decoration-color: #616161;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-thickness: 1px;
+}
+footer p:active {
+    outline: 1.5px dashed #616161;
+}
+footer ul{
+    margin-left: 140px;
+}
+footer li {
+    display: inline;
+    font-size: 11px;
+    margin: 10px;
+    cursor:pointer;
+}
+footer li:hover{
+    color:#262626;
+    text-decoration-color: #262626;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-thickness: 1px;
+}
+footer li:active {
+    outline: 1.5px dashed #262626;
+}
